@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Signin-Signup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <form action="/list" class="sign-in-form" id="sign-in-form" method="POST">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="email" placeholder="Email" name="email" required autocomplete="off">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" name="password" required autocomplete="off">
+                </div>
+                <input type="submit" value="Sign in" class="btn">
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </form>
+            <form action="/" class="sign-up-form" method="POST">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="First Name" name="firstname" required autocomplete="off"> 
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Last Name" name="lastname" required autocomplete="off">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-phone"></i>
+                    <input type="text" minlength="10" maxlength="10" placeholder="Phone No" name="phonenumber" required autocomplete="off">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email" name="email" required autocomplete="off">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" name="password" required autocomplete="off">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Confirm Password" name="confirmpassword" required autocomplete="off">
+                </div>
+                <input type="submit" value="Sign up" class="btn">
+                <p class="account-text">Already have an account? <a href="" id="sign-in-btn2">Sign in</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h1>Welcome to ToDo App</h1>
+                    <p>Already Have an Account ?? Sign In to Continue</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="signin.svg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h1>New to our App?</h1>
+                    <p>Witness the new ToDo App, Sign Up to Continue</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="signup.svg" alt="" class="image">
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/script.js">
+    </script>
+</body>
+</html>
